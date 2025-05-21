@@ -8,7 +8,7 @@ app.use(cors());
 
 app.get('/song', async (req, res) => {
   try {
-    const response = await fetch('http://uk6freenew.listen2myradio.com:21034/currentsong?sid=1');
+    const response = await fetch('http://82.145.63.6:6627/currentsong?sid=1');
     const song = await response.text();
     res.send(song.trim());
   } catch (error) {
